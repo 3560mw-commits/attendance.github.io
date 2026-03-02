@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-container {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Scanner Container */
+#reader {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #eee;
+    margin-bottom: 20px;
+}
+
+#status {
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #666;
+}
+
+/* Buttons */
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+/* Enabled States */
+#btn-in {
+    background-color: #2ecc71;
+    color: white;
+}
+
+#btn-out {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Disabled State */
+.btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.btn:active:not(:disabled) {
+    transform: scale(0.98);
+}
+
+/* Result Log */
+#result-log {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}

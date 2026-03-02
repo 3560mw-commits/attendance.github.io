@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkSync QR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Office Check-In</h1>
+        <div id="reader"></div> <div class="controls">
+            <p id="status">Scan the Office QR Code</p>
+            <button id="btn-in" class="btn" disabled>Sign In</button>
+            <button id="btn-out" class="btn" disabled>Sign Out</button>
+        </div>
+        <div id="result-log"></div>
+    </div>
+
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script src="script.js"></script>
+</body>
+</html>
